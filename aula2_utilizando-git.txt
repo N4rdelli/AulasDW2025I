@@ -1,0 +1,39 @@
+___ Comandos git ao iniciar um repositório vazio ___
+
+->  Inicializa o Repositório:
+git init
+
+->  Adiciona os novos arquivos no git para versionamento:
+git add .
+
+->  Salva essa versão dos arquivos:
+git commit -m "Initial Commit"
+
+->  Configura a branch para 'main':
+git branch -M main
+
+->  Faz o link com o repositório no GitHub:
+git remote add origin https://github.com/N4rdelli/NomeDoRepositorio.git
+
+->  Envia as informações para a nuvem:
+git push -u origin main
+
+
+
+___ Comandos git ao trabalhar com um repositório versionado ___
+
+->  Clona o repositório da nuvem num novo diretório
+git clone https://github.com/N4rdelli/NomeDoRepositorio.git
+
+->  Baixa a atualização da nuvem para uma pasta já existente
+git pull
+
+
+
+___ Outros comandos git que podem ser úteis ___
+
+->  Abre o VS Code no diretório atual
+code .
+
+->  Verifica o status
+git status
