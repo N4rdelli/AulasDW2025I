@@ -11,13 +11,13 @@ git init
 git add .
 
 ->  Salva essa versão dos arquivos:
-git commit -m "Initial Commit"
+git commit -m "<NomeDoCommit>"
 
 ->  Configura a branch para 'main':
 git branch -M main
 
 ->  Faz o link com o repositório no GitHub:
-git remote add origin https://github.com/N4rdelli/NomeDoRepositorio.git
+git remote add origin <UrlDoRepositório>
 
 ->  Envia as informações para a nuvem:
 git push -u origin main
@@ -27,7 +27,7 @@ git push -u origin main
 ___ Comandos git ao trabalhar com um repositório versionado ___
 
 ->  Clona o repositório da nuvem num novo diretório
-git clone https://github.com/N4rdelli/NomeDoRepositorio.git
+git clone <UrlDoRepositório>
 
 ->  Baixa a atualização da nuvem para uma pasta já existente
 git pull
@@ -39,8 +39,11 @@ ___ Outros comandos git que podem ser úteis ___
 ->  Abre o VS Code no diretório atual
 code .
 
-->  Verifica o status
+->  Verifica o status do repositório local
 git status
+
+-> Sincroniza e compara o repositório local com a nuvem (precisa do git status para mostrar)
+git fetch
 
 -> Entrar em uma pasta pelo cmd
 cd <NomeDaPasta>
@@ -50,3 +53,9 @@ cd ..
 
 -> Voltar para o C:
 cd \
+
+
+
+___ Mais comandos git ___
+
+https://education.github.com/git-cheat-sheet-education.pdf
