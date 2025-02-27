@@ -1,5 +1,9 @@
 ___ Comandos git ao iniciar um repositório vazio ___
 
+-> Configura o computador com o email e nome do responsável pelo código
+git config --global user.name "<UserName>"
+git config --global user.email <Email>
+
 ->  Inicializa o Repositório:
 git init
 
@@ -37,3 +41,12 @@ code .
 
 ->  Verifica o status
 git status
+
+-> Entrar em uma pasta pelo cmd
+cd <NomeDaPasta>
+
+-> Voltar uma pasta
+cd ..
+
+-> Voltar para o C:
+cd \
