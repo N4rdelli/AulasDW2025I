@@ -1,58 +1,223 @@
 <!--Especifica o HTML5-->
 <!DOCTYPE html>
 
-<html lang="pt-BR"> <!--Define a linguagem do site-->
-    <head>
-        <title>Nome da Aba</title>
-        <meta charset="utf-8"> <!--Justifica a acentuação dos caracteres-->
-    </head>
-    <body>
-        <h1 style="color: purple">Eu sou um título de nivel 1</h1>
+<html lang="pt-BR">
+  <!--Define a linguagem do site-->
+  <head>
+    <title>Aprendendo Html</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <!--Justifica a acentuação dos caracteres-->
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li>Títulos</li>
+        <li>Texto</li>
+        <li>Tags Semânticas</li>
+        <li>Mídias</li>
+        <li>Formulários</li>
+      </ul>
+    </header>
+
+    <main>
+      <section>
+        <h2>Títulos</h2>
+        <div class="divContainer">
+          <div class="divBox">
+            <h3>h1</h3>
+            <hr style="border: 1px solid #4d4a8c" />
+            <div class="boxContent"><h1>Eu sou um título nível 1</h1></div>
+          </div>
+
+          <div class="divBox">
+            <h3>h1</h3>
+            <hr style="border: 1px solid #4d4a8c" />
+            <div class="boxContent"><h2>Eu sou um título nível 2</h2></div>
+          </div>
+
+          <div class="divBox">
+            <h3>h1</h3>
+            <hr style="border: 1px solid #4d4a8c" />
+            <div class="boxContent">
+              <h3 style="background: none; padding: 0rem">
+                Eu sou um título nível 3
+              </h3>
+            </div>
+          </div>
+
+          <div class="divBox">
+            <h3>h1</h3>
+            <hr style="border: 1px solid #4d4a8c" />
+            <div class="boxContent"><h4>Eu sou um título nível 4</h4></div>
+          </div>
+
+          <div class="divBox">
+            <h3>h1</h3>
+            <hr style="border: 1px solid #4d4a8c" />
+            <div class="boxContent"><h5>Eu sou um título nível 5</h5></div>
+          </div>
+
+          <div class="divBox">
+            <h3>h1</h3>
+            <hr style="border: 1px solid #4d4a8c" />
+            <div class="boxContent"><h6>Eu sou um título nível 6</h6></div>
+          </div>
+        </div>
+      </section>
+
+      <hr style="border: 1px solid #4d4a8c; margin: 0rem 3rem;" />
+
+      <section>
+        <h2>Textos, Parágrafos e Listas</h2>
+        <div class="divContainer">
+          <div class="divBox">
+            <h3>p</h3>
+            <hr style="border: 1px solid #4d4a8c" />
+            <div class="boxContent">
+              <p>
+                Eu sou um parágrafo.<br />Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+
+          <div class="divBox">
+            <h3>b, i, ins</h3>
+            <hr style="border: 1px solid #4d4a8c" />
+            <div class="boxContent">
+              <p>
+                <b>b deixa o texto em negrito</b>,<br /><i
+                  >i deixa o texto em itálico</i
+                >,<br /><ins>ins sublinha o texto</ins>
+              </p>
+            </div>
+          </div>
+
+          <div class="divBox">
+            <h3>strong, mark</h3>
+            <hr style="border: 1px solid #4d4a8c" />
+            <div class="boxContent">
+              <p>
+                <strong>strong enfatiza o texto em leitores</strong>,<br /><mark
+                  >mark grifa o texto</mark
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="divBox">
+            <h3>pre</h3>
+            <hr style="border: 1px solid #4d4a8c" />
+            <div class="boxContent">
+              <p></p>
+              <pre>pre faz com que o texto<br>         permaneça      da maneira que foi digitado<br> (inslusive fonte do sistema)</pre>
+            </div>
+          </div>
+
+          <div class="divBox">
+            <h3>code</h3>
+            <hr style="border: 1px solid #4d4a8c" />
+            <div class="boxContent">
+              <p>
+                Utilizamos code para formatar códigos.<br /><code>git init</code
+                ><br /><code>git clone</code>
+              </p>
+            </div>
+          </div>
+
+          <div class="divBox">
+            <h3>pre + code</h3>
+            <hr style="border: 1px solid #4d4a8c" />
+            <div class="boxContent">
+              <pre>
+      <code>function imprimirOla(){
+              console.log("Hello, Wolrd!");
+}</code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>Made with love by N4rdelli</footer>
+  </body>
+
+  <!--<body>
+    <main>
+      <div class="divTextos">
+        <h1 style="text-align: center">Eu sou um título de nivel 1</h1>
         <h2>Eu sou um título de nível 2</h2>
-        <h3 style="text-align: center;">Eu sou um título de nível 3</h3>
+        <h3 style="color: purple">Eu sou um título de nível 3</h3>
         <h4>Eu sou um título de nível 4</h4>
         <h5>Eu sou um título de nível 5</h5>
         <h6>Eu sou um título de nível 6</h6>
+      </div>
 
-        <hr> <!--Adiciona uma linha na tela-->
+      <hr />
+      //Adiciona uma linha na tela
 
+      <div class="divParagrafos">
         <p>Eu sou um parágrafo</p>
 
-        <p style="background:lightpink; color: blueviolet; font-size: 3rem;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id voluptate voluptatibus incidunt, quae laborum aut delectus numquam at aliquam. Eos voluptatem cum quasi, consequatur maiores quod debitis illum illo iste!</p>
+        <p style="background: lightpink; color: blueviolet; font-size: 1.5rem">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id voluptate
+          voluptatibus incidunt, quae laborum aut delectus numquam at aliquam.
+          Eos voluptatem cum quasi, consequatur maiores quod debitis illum illo
+          iste!
+        </p>
 
-        <p>A Nardelli          &nbsp; é         &nbsp; uma estudante.</p>
+        <p>A Nardelli &nbsp; é &nbsp; uma estudante.</p>
+      </div>
 
-        <br> <!--Quebra a linha e/ou adiciona linhas-->
+      <hr />
 
+      <div class="divFormatacao">
         <p><b>b deixa o texto em negrito.</b></p>
         <p><strong>strong enfatiza o texto em leitores.</strong></p>
         <p><i>i deixa o texto em itálico.</i></p>
         <p><ins>ins sublinha o texto</ins></p>
         <p><mark>mark grifa o texto</mark></p>
-        <pre>Faz com que o     texto     permaneça      da maneira que foi digitado</pre>
+        <p><pre>pre faz com que o     texto     permaneça      da maneira que foi digitado (inslusive fonte do sistema)</pre></p>
+        
 
-        <p>Utilizamos <code>git init</code> para inicializar um repositório e iniciar o versionamento</p>
+        <p>
+          Utilizamos <code>git init</code> para inicializar um repositório e
+          iniciar o versionamento
+        </p>
 
-        <pre> <!--Nesse caso, a function é mostrada exatamente da maneira que escrevemos ela abaixo-->
+        <pre> //Nesse caso, a function é mostrada exatamente da maneira que escrevemos ela abaixo
             <code>
                 function imprimirOla(){
                     console.log("Hello, Wolrd!");
                 }
             </code>
         </pre>
+      </div>
 
-        <ul> <!--Cria uma lista não-ordenada -->
-            <li>Banana</li>
-            <li>Maçã</li>
-            <li>Uva</li>
+      <hr />
+
+      <div class="divListas">
+        <ul>
+          //Cria uma lista não-ordenada
+          <li>Banana</li>
+          <li>Maçã</li>
+          <li>Uva</li>
         </ul>
 
-        <ol> <!--Cria uma lista ordenada -->
-            <li>Corinthians</li>
-            <li>Barcelona</li>
-            <li>Real Madri</li>
+        <ol>
+          //Cria uma lista ordenada
+          <li>Corinthians</li>
+          <li>Barcelona</li>
+          <li>Real Madri</li>
         </ol>
+      </div>
+    </main>
 
-        <!--Conferir o site MDM WEB DOCS: developer.mozilla.org/en-US/docs/Web/HTML-->
-    </body>
+    <br />
+    //Quebra a linha e/ou adiciona linhas
+
+    //Conferir o site MDM WEB DOCS: developer.mozilla.org/en-US/docs/Web/HTML
+  </body> -->
 </html>

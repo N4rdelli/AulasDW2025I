@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #202540;
+    color: #fff;
+}
+
+section{
+    padding: 3rem;
+}
+
+.divContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 2rem;
+}
+
+.divBox{
+    width: 30%;
+    height: fit-content;
+    background-color: #0C0E2E;
+    border-radius: 10pt;
+    border: 2px solid #4D4A8C;
+}
+
+h3{
+    text-align: center;
+    padding: 0.75rem;
+    background-color: #4D4A8C66;
+}
+
+.boxContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem;
+    text-align: center;
+}

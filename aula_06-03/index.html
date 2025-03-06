@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- CSS Interno: tag 'style' no head -->
+    <style>
+        /*
+            Existem três formas de aplicar o css em elementos: 
+            - tag: utilizando o nome da tag (exemplo: b{...})
+            - classe: para aproveitar o mesmo css em vários locais diferentes (exemplo: .drinks)
+            - #id: definimos um id para o elemento, se-aplica somente a ele, só pode existir 1 id com determinado nome (ex: #logo)
+        */
+
+        b{
+            font-weight: normal;
+            color: #ff0000;
+            font-style: italic;
+        }
+
+        .texto-verde{
+            color: green;
+        }
+
+        .texto-azul{
+            color: lightseagreen;
+        }
+
+        .fundo-laranja{
+            background-color: salmon;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <h1>Aula sobre CSS</h1>
+
+    <!-- CSS inline, direto no elemento html -->
+    <p style="background-color: #9724ef; color: #14fc46;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores nam tempora possimus, quasi eos debitis
+        soluta dignissimos in molestias explicabo deleniti culpa maiores odio cum blanditiis ullam facere delectus ea.
+    </p>
+
+    <p style="text-align: center;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores nam tempora possimus, quasi eos debitis
+        soluta dignissimos in molestias explicabo deleniti culpa maiores odio cum blanditiis ullam facere delectus ea.
+    </p>
+
+    <p>Tudo o que era para ser negrito: <b>Olá, CSS!</b></p>
+
+    <!-- Para utilizar classes nós utilizamos a propriedade 'class' -->
+    <b class="texto-verde">Mudamos a cor da fonte utilizando classes!!</b>
+
+    <b class="texto-azul fundo-laranja">Mudamos as cores novamente!</b>
+
+    <p style="font-size: 4rem;">No meio do texto <i class="texto-azul">também pode!</i></p>
+
+    <p class="texto-verde texto-azul">
+        Bem vindo ao mundo do CSS, 
+        <b style="font-size: 20px;">onde alteramos tudo!</b>
+    </p>
+
+    <p class="texto-verde">Novo texto. <em>Novo texto também!</em></p>
+
+    <!-- O id precisa ser único na página -->
+    <div id="quadrado" style="background-color: #009440; width: 500px; height: 300px;">
+    </div>
+
+    <div id="losango" style="background-color: #ffcb00; width: 500px; height: 150px;">
+
+    </div>
+
+    <div id="circulo" style="background-color: #302681; width: 150px; height: 150px; border-radius: 100%;">
+
+    </div>
+
+</body>
+
+</html>
