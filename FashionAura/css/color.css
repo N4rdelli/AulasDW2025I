@@ -1,0 +1,21 @@
+:root{
+    /* Tema 1 */
+    --bg-color:#F2F2F2;
+    --text-color: #02020a;
+
+    --nav-bg: #02020a;
+    --logo-color: #f2f2f2;
+
+    --primary-color:#881826;
+    
+    --secondary-bg:#BFBFBF;
+    --primary-dark-color:#595959;
+    --secondary-dark-color:#02020A;
+
+    /* Tema 2 */
+    body.secondary-theme{
+        --bg-color: #02020A;
+        --text-color: #f2f2f2;
+        --secondary-bg: #595959;
+    }
+}
