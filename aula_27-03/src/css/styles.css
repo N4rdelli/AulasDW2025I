@@ -5,18 +5,25 @@ table, tbody, tr, td {
 body{
     width: 100dvw;
     height: 100dvh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+main{ 
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    row-gap: 1rem;
+    column-gap: 1rem;
 }
 
 h1{
     margin: 1rem;
     color: #d55d8d;
+    width: 100%;
+    text-align: center;
 }
 
 .btn{
@@ -39,16 +46,19 @@ h1{
     font-size: 0.8em;
     background-color: #f9cddf;
     color: #d55d8d;
-    border-top-left-radius: 7pt;
-    border-top-right-radius: 7pt;
+    border: 1px solid #fff;
+    border-radius: 7pt;
 }
 
 .result{
     text-align: right;
-    padding: 0.5rem;
+    padding: 1rem 0.5rem;
     font-size: 1.4em;
     background-color: #f9cddf;
     border: none;
+    border: 1px solid #fff;
+    border-radius: 7pt;
+
 }
 
 .clean{
@@ -82,4 +92,13 @@ h1{
 
 .equal:hover{
     background-color: #b74472;
+}
+
+.area, .area2{
+    border: 1px solid #999;
+    padding: 0.8rem;
+}
+
+form{
+    max-width: 15rem;
 }
